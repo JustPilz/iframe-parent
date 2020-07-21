@@ -10,3 +10,9 @@ function openFrame() {
 function reloadFrame() {
   document.getElementById("frame").contentWindow.location.reload(true);
 }
+
+function closeForm() {
+  document.getElementById("frame").style.display = "none";
+}
+
+window.closeForm = closeForm;
