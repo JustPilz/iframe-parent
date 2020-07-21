@@ -5,6 +5,8 @@ function openFrame() {
   document.getElementById(
     "frame"
   ).src = `https://justpilz.github.io/iframe-child/?firstname=${firstname}&lastname=${lastname}`;
+
+  document.getElementById("frame").style.display = "block";
 }
 
 function reloadFrame() {
