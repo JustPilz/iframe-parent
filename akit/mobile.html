@@ -9,5 +9,14 @@
       title="tender-lalande-0qgcb"
       allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
     ></iframe>
+    <script>
+      window.addEventListener("message", receiveMessage, false);
+
+      function receiveMessage(event) {
+        if (event.data == "formSubmitted") {
+          console.log("postMessage пойман", event);
+        }
+      }
+    </script>
   </body>
 </html>
